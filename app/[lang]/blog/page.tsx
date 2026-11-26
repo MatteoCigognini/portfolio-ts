@@ -7,6 +7,12 @@ import PostsList from '@/app/components/Blog/PostsList';
 import { getPageContext } from '@/lib/getPageContext';
 import type { LangParams } from '@/lib/i18n';
 
+/**
+ * Titolo e descrizione della pagina con l'elenco degli articoli.
+ *
+ * @param params - Parametri di route con la lingua.
+ * @returns I metadati della pagina nella lingua richiesta.
+ */
 export async function generateMetadata({ params }: { params: LangParams }): Promise<Metadata> {
   const { dict } = await getPageContext(params);
   return { title: dict.nav.blog, description: dict.blog.allPosts.description };

@@ -16,11 +16,24 @@ type PostPageProps = {
   params: Promise<{ lang: string; segmentName: string }>;
 };
 
+/**
+ * Indica a Next.js quali articoli pre-renderizzare in fase di build: ogni articolo in ogni lingua.
+ *
+ * @returns Una combinazione `{ lang, segmentName }` per ogni coppia lingua × articolo.
+ */
 export function generateStaticParams() {
   const posts = getSortedPostsData();
   return LOCALES.flatMap((lang) => posts.map((post) => ({ lang, segmentName: post.id })));
 }
 
+/**
+ * Metadati SEO dell'articolo, ricavati dal suo front-matter: titolo, descrizione, tag come keyword,
+ * autore e Open Graph di tipo `article` con data di pubblicazione e immagine di copertina.
+ *
+ * @param params - Parametri di route con lingua e id dell'articolo.
+ * @returns I metadati dell'articolo.
+ * @throws Interrompe il rendering con `notFound()` (pagina 404) se l'articolo non esiste.
+ */
 export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
   const { segmentName } = await params;
   if (!findPostByID(segmentName)) notFound();

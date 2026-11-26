@@ -10,4 +10,11 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
   en: () => import('./dictionaries/en.json').then((m) => m.default satisfies Dictionary),
 };
 
+/**
+ * Carica il dizionario dei testi per la lingua indicata.
+ * L'import è dinamico, quindi viene caricato solo il JSON della lingua richiesta.
+ *
+ * @param locale - Lingua già validata (vedi `isLocale`).
+ * @returns Il dizionario della lingua, con la stessa struttura di `it.json`.
+ */
 export const getDictionary = async (locale: Locale): Promise<Dictionary> => dictionaries[locale]();

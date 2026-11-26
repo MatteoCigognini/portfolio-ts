@@ -19,10 +19,22 @@ type LayoutProps = {
   params: Promise<{ lang: string }>;
 };
 
+/**
+ * Indica a Next.js quali lingue pre-renderizzare in fase di build.
+ *
+ * @returns Un oggetto `{ lang }` per ogni lingua in `LOCALES`.
+ */
 export function generateStaticParams() {
   return LOCALES.map((lang) => ({ lang }));
 }
 
+/**
+ * Metadati di base del sito, ereditati da tutte le pagine: titolo (con template `%s | Matteo Cigognini`),
+ * descrizione, link alle versioni nelle altre lingue e Open Graph.
+ *
+ * @param params - Parametri di route con la lingua.
+ * @returns I metadati nella lingua richiesta, oppure un oggetto vuoto se la lingua non è supportata.
+ */
 export async function generateMetadata({ params }: Omit<LayoutProps, 'children'>): Promise<Metadata> {
   const { lang } = await params;
   if (!isLocale(lang)) return {};

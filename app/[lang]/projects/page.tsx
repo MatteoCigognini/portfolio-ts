@@ -10,6 +10,12 @@ import type { LangParams } from '@/lib/i18n';
 import { PROJECTS } from '@/data/projects';
 import styles from './page.module.css';
 
+/**
+ * Titolo della pagina dei progetti.
+ *
+ * @param params - Parametri di route con la lingua.
+ * @returns I metadati della pagina nella lingua richiesta.
+ */
 export async function generateMetadata({ params }: { params: LangParams }): Promise<Metadata> {
   const { dict } = await getPageContext(params);
   return { title: dict.nav.projects };

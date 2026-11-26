@@ -1,7 +1,13 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { DEFAULT_LOCALE, isLocale, LOCALES, type Locale } from '@/lib/i18n';
 
-// Restituisce la lingua preferita dell'utente tra quelle supportate
+/**
+ * Ricava la lingua preferita dell'utente tra quelle supportate, leggendo l'header `Accept-Language`.
+ * Le lingue vengono considerate nell'ordine inviato dal browser, ignorando regione e peso (`en-US;q=0.8` → `en`).
+ *
+ * @param request - Richiesta in arrivo.
+ * @returns La prima lingua supportata trovata, altrimenti {@link DEFAULT_LOCALE}.
+ */
 function getLocale(request: NextRequest): Locale {
   const acceptLanguage = request.headers.get('accept-language');
   if (!acceptLanguage) return DEFAULT_LOCALE;
@@ -14,6 +20,13 @@ function getLocale(request: NextRequest): Locale {
   return preferred ?? DEFAULT_LOCALE;
 }
 
+/**
+ * Middleware di Next.js: garantisce che ogni URL abbia il prefisso della lingua.
+ * Se manca, reindirizza alla lingua preferita del browser (es. `/projects` → `/it/projects`).
+ *
+ * @param request - Richiesta in arrivo.
+ * @returns `NextResponse.next()` se la lingua è già presente, altrimenti un redirect.
+ */
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
