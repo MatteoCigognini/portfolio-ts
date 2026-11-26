@@ -1,0 +1,96 @@
+{
+    "meta": {
+        "title": "Matteo Cigognini — Full Stack Developer",
+        "description": "Full Stack Developer in continua evoluzione, sempre alla ricerca di nuove sfide."
+    },
+    "nav": {
+        "home": "Home",
+        "projects": "Progetti",
+        "blog": "Blog",
+        "menu": "Menu",
+        "language": "Lingua"
+    },
+    "hello": "Ciao",
+    "intro": "Sono **Matteo Cigognini**",
+    "role": "Full Stack Dev • Coffee lover ☕",
+    "roleCaption": "Full Stack Developer in continua evoluzione, sempre alla ricerca di nuove sfide.",
+    "badge": "Aperto a nuove sfide",
+    "contacts": "Contatti",
+    "viewWorks": "Vedi lavori",
+    "contactMe": "Contattami",
+    "open": "Apri",
+    "visit": "Visita il sito",
+    "internal": "Progetto interno",
+    "scroll": "Scorri",
+    "stats": [
+        { "value": "6+", "label": "Anni di esperienza" },
+        { "value": "500k+", "label": "Prodotti online" },
+        { "value": "40+", "label": "Lingue gestite" }
+    ],
+    "techStack": {
+        "title": "Tech Stack",
+        "description": "Competenze solide, orientato al **miglioramento continuo**, attento ai dettagli e capace di **adattarsi a progetti** diversi.\n Aperto a nuove sfide e focalizzato su soluzioni pratiche ed efficienti.",
+        "learning": "Sto studiando"
+    },
+    "works": {
+        "title": "Lavori",
+        "description": "I miei lavori principali su cui ho maturato **6+ anni di esperienza**.",
+        "items": {
+            "sognando-casa": {
+                "description": "E-commerce che vende materiale edile (principalmente piastrelle), ho realizzato l'intera struttura dal frontend al backend."
+            },
+            "dimora": {
+                "description": "E-commerce che vende materiale edile (principalmente piastrelle), ho realizzato l'intera struttura dal frontend al backend."
+            },
+            "be-shoppy": {
+                "description": "Gestionale centralizzato per gli e-commerce: creazione prodotti, gestione clienti, ordini, magazzino, pagamenti, spedizioni."
+            }
+        }
+    },
+    "projects": {
+        "title": "Progetti",
+        "description": "Qui puoi trovare una selezione dei **progetti** a cui ho lavorato.",
+        "items": {
+            "reasy": {
+                "description": "Reasy è un generatore online versatile che ti permette di creare password sicure, UUID, palette di colori, numeri e nomi originali. Uno strumento veloce e intuitivo, ideale per chi cerca soluzioni pratiche e creative in pochi secondi."
+            },
+            "cardbit": {
+                "description": "Cardbit genera flashcards intelligenti a partire da video, documenti o appunti, trasformando informazioni complesse in schede semplici e chiare. È lo strumento perfetto per studenti e professionisti che vogliono memorizzare più facilmente e rendere lo studio davvero efficace."
+            },
+            "quizzly": {
+                "description": "Quizzly ti consente di creare facilmente quiz interattivi e divertenti da condividere sui social. Un modo semplice ed efficace per aumentare l’engagement, stimolare la curiosità e rafforzare la connessione con la tua community."
+            },
+            "techigo": {
+                "description": "Techigo è il mio primo blog sulla tecnologia, sviluppo, marketing e tanto altro dove condivido le mie scoperte e argomenti che mi interessano particolarmente."
+            }
+        }
+    },
+    "blog": {
+        "lastPosts": {
+            "title": "Ultimi articoli",
+            "description": "Leggi cosa ho scritto per te negli ultimi giorni."
+        },
+        "allPosts": {
+            "title": "Il mio **Blog**",
+            "description": "Pensieri, esperienze e appunti dal mondo dello sviluppo."
+        },
+        "readMore": "Leggi l'articolo",
+        "readingTime": "min di lettura",
+        "back": "Torna al blog",
+        "empty": "Nessun articolo pubblicato, torna presto!"
+    },
+    "haveAnIdea": {
+        "title": "Hai un'**idea**? Realizziamola.",
+        "description": "Non esitate a contattarmi se avete bisogno di uno sviluppatore. Che si tratti di un sito web, di un'app web o di una posizione a tempo pieno, sono sempre disponibile a parlare con voi."
+    },
+    "footer": {
+        "rights": "Tutti i diritti riservati.",
+        "madeWith": "Realizzato con Next.js e tanto caffè",
+        "backToTop": "Torna su",
+        "copy": "Copia",
+        "copied": "Copiata!"
+    },
+    "fields": {
+        "level": "Livello"
+    }
+}

@@ -1,0 +1,116 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 28px;
+  border-radius: inherit;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.icon {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.iconImg {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: transform var(--transition-slow);
+}
+
+.iconGlow {
+  position: absolute;
+  inset: 0;
+  width: 64px;
+  height: 64px;
+  filter: blur(22px) saturate(1.6);
+  opacity: 0.55;
+  transform: scale(1.1);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.card:hover .iconImg {
+  transform: translateY(-3px) rotate(-4deg);
+}
+
+.card:hover .iconGlow {
+  opacity: 0.9;
+  transform: scale(1.5);
+}
+
+.category {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--foreground-subtle);
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.description {
+  margin-top: 10px;
+  color: var(--foreground-muted);
+  font-size: 0.96rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.skill {
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 0.74rem;
+  color: var(--foreground-muted);
+}
+
+.open {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.openIcon {
+  transition: transform var(--transition-fast);
+}
+
+.card:hover .open {
+  color: var(--color-primary);
+}
+
+.card:hover .openIcon {
+  transform: translateX(5px);
+}

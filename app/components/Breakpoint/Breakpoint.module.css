@@ -1,0 +1,12 @@
+.breakpoint {
+  width: 100%;
+  max-width: var(--breakpoint);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .breakpoint {
+    padding: 0 18px;
+  }
+}

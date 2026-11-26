@@ -1,0 +1,25 @@
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.empty {
+  padding: 48px;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--border-strong);
+  color: var(--foreground-muted);
+}
+
+@media screen and (max-width: 1024px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,96 @@
+{
+    "meta": {
+        "title": "Matteo Cigognini — Full Stack Developer",
+        "description": "Full Stack Developer in constant evolution, always looking for new challenges."
+    },
+    "nav": {
+        "home": "Home",
+        "projects": "Projects",
+        "blog": "Blog",
+        "menu": "Menu",
+        "language": "Language"
+    },
+    "hello": "Hi there",
+    "intro": "I'm **Matteo Cigognini**",
+    "role": "Full Stack Dev • Coffee lover ☕",
+    "roleCaption": "Full Stack Developer in constant evolution, always looking for new challenges.",
+    "badge": "Open to new challenges",
+    "contacts": "Contacts",
+    "viewWorks": "View works",
+    "contactMe": "Contact me",
+    "open": "Open",
+    "visit": "Visit website",
+    "internal": "Internal project",
+    "scroll": "Scroll",
+    "stats": [
+        { "value": "6+", "label": "Years of experience" },
+        { "value": "500k+", "label": "Products online" },
+        { "value": "40+", "label": "Languages handled" }
+    ],
+    "techStack": {
+        "title": "Tech Stack",
+        "description": "Solid skills, focused on **continuous improvement**, detail-oriented and able to **adapt to different projects**.\n Open to new challenges and focused on practical, efficient solutions.",
+        "learning": "Currently learning"
+    },
+    "works": {
+        "title": "Works",
+        "description": "My main works, where I built **6+ years of experience**.",
+        "items": {
+            "sognando-casa": {
+                "description": "E-commerce selling building materials (mainly tiles). I developed the entire structure, from frontend to backend."
+            },
+            "dimora": {
+                "description": "E-commerce selling building materials (mainly tiles). I developed the entire structure, from frontend to backend."
+            },
+            "be-shoppy": {
+                "description": "Centralized management system for e-commerce: product creation, customer management, orders, inventory, payments and shipping."
+            }
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "description": "Here you can find a selection of the **projects** I have worked on.",
+        "items": {
+            "reasy": {
+                "description": "Reasy is a versatile online generator that lets you create secure passwords, UUIDs, color palettes, numbers and original names. A fast and intuitive tool, ideal for anyone looking for practical and creative solutions in seconds."
+            },
+            "cardbit": {
+                "description": "Cardbit generates smart flashcards from videos, documents or notes, turning complex information into simple, clear cards. The perfect tool for students and professionals who want to memorize more easily and make studying truly effective."
+            },
+            "quizzly": {
+                "description": "Quizzly lets you easily create fun, interactive quizzes to share on social media. A simple and effective way to boost engagement, spark curiosity and strengthen the connection with your community."
+            },
+            "techigo": {
+                "description": "Techigo is my first blog about technology, development, marketing and much more, where I share my discoveries and topics I find particularly interesting."
+            }
+        }
+    },
+    "blog": {
+        "lastPosts": {
+            "title": "Latest posts",
+            "description": "Read what I've written for you lately."
+        },
+        "allPosts": {
+            "title": "My **Blog**",
+            "description": "Thoughts, experiences and notes from the world of development."
+        },
+        "readMore": "Read the article",
+        "readingTime": "min read",
+        "back": "Back to blog",
+        "empty": "No posts published yet, come back soon!"
+    },
+    "haveAnIdea": {
+        "title": "Have an **Idea**? Let's build it.",
+        "description": "Feel free to reach out if you need a developer. Whether you need a website, a web app, or you're looking to fill a full-time position, I'm always open to a conversation."
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "madeWith": "Built with Next.js and lots of coffee",
+        "backToTop": "Back to top",
+        "copy": "Copy",
+        "copied": "Copied!"
+    },
+    "fields": {
+        "level": "Level"
+    }
+}

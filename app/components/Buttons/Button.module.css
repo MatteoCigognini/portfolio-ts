@@ -1,0 +1,100 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  white-space: nowrap;
+  isolation: isolate;
+  overflow: hidden;
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background-color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Dimensioni */
+.sm {
+  height: 38px;
+  padding: 0 18px;
+  font-size: var(--font-size-sm);
+}
+
+.md {
+  height: 46px;
+  padding: 0 24px;
+  font-size: var(--font-size-md);
+}
+
+.lg {
+  height: 56px;
+  padding: 0 30px;
+  font-size: 1.05rem;
+}
+
+/* Varianti */
+.primary {
+  color: #1a0a02;
+  background: var(--gradient-button);
+  box-shadow: 0 8px 30px -8px rgba(var(--color-primary-rgb), 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+/* Riflesso che attraversa il bottone all'hover */
+.primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.45) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.7s var(--ease-out);
+}
+
+.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px -10px rgba(var(--color-primary-rgb), 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.primary:hover::after {
+  transform: translateX(120%);
+}
+
+.secondary {
+  color: var(--foreground);
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.secondary:hover {
+  background: var(--surface-hover);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.ghost {
+  color: var(--foreground-muted);
+}
+
+.ghost:hover {
+  color: var(--foreground);
+}
