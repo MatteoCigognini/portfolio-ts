@@ -1,28 +1,30 @@
 import type { Project } from '@/types';
 
+/** Progetti personali: i `live` per primi, quelli in sviluppo senza link finché non sono pronti. */
 export const PROJECTS: Project[] = [
+  {
+    name: 'Techigo',
+    slug: 'techigo',
+    category: 'blog',
+    status: 'live',
+    skills: ['Next.js', 'React', 'MySQL', 'HTML', 'CSS'],
+    link: '/blog',
+    showImage: false,
+  },
   {
     name: 'Reasy Gen',
     slug: 'reasy',
     category: 'web-app',
+    status: 'wip',
     skills: ['Next.js', 'React', 'MySQL', 'HTML', 'CSS'],
-    link: 'https://reasy.vercel.app/it',
     showImage: false,
   },
   {
     name: 'Quizzly',
     slug: 'quizzly',
     category: 'web-app',
+    status: 'wip',
     skills: ['Next.js', 'React', 'MySQL', 'HTML', 'CSS', 'OpenAI'],
-    link: 'https://quizzly-azure.vercel.app/it',
-    showImage: false,
-  },
-  {
-    name: 'Techigo',
-    slug: 'techigo',
-    category: 'blog',
-    skills: ['Next.js', 'React', 'MySQL', 'HTML', 'CSS'],
-    link: 'https://blog.matteocigognini.it',
     showImage: false,
   },
 ];

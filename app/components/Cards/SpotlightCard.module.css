@@ -41,7 +41,7 @@
   transition: opacity var(--transition-slow);
 }
 
-.spotlight:hover {
+.interactive:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-card);
 }

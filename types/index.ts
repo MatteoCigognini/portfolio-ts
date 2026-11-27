@@ -20,7 +20,10 @@ export interface Project {
   name: string;
   slug: string;
   category: 'web-app' | 'blog';
+  /** `live`: pubblicato e consultabile; `wip`: in sviluppo, la card non è cliccabile. */
+  status: 'live' | 'wip';
   skills: string[];
+  /** URL esterno, oppure percorso interno che inizia con `/` (viene prefissato con la lingua). */
   link?: string;
   showImage: boolean;
 }

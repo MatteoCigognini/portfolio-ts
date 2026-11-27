@@ -34,7 +34,7 @@
     },
     "works": {
         "title": "Works",
-        "description": "My main works, where I built **6+ years of experience**.",
+        "description": "My main works, where I built **8+ years of experience**.",
         "items": {
             "sognando-casa": {
                 "description": "E-commerce selling building materials (mainly tiles). I developed the entire structure, from frontend to backend."
@@ -50,15 +50,19 @@
     "projects": {
         "title": "Projects",
         "description": "Here you can find a selection of the **projects** I have worked on.",
+        "status": {
+            "live": "Live",
+            "wip": "In development"
+        },
         "items": {
             "reasy": {
-                "description": "Reasy is a versatile online generator that lets you create secure passwords, UUIDs, color palettes, numbers and original names. A fast and intuitive tool, ideal for anyone looking for practical and creative solutions in seconds."
+                "description": "An all-in-one online generator for secure passwords, UUIDs, color palettes, numbers and names. I'm building it with Next.js and MySQL to bring small tools that are usually scattered across different sites into a single fast, clean interface."
             },
             "cardbit": {
                 "description": "Cardbit generates smart flashcards from videos, documents or notes, turning complex information into simple, clear cards. The perfect tool for students and professionals who want to memorize more easily and make studying truly effective."
             },
             "quizzly": {
-                "description": "Quizzly lets you easily create fun, interactive quizzes to share on social media. A simple and effective way to boost engagement, spark curiosity and strengthen the connection with your community."
+                "description": "A web app for creating interactive quizzes to share on social media. I'm building it with Next.js and MySQL, integrating the OpenAI API to help generate questions and answers in seconds."
             },
             "techigo": {
                 "description": "Techigo is my first blog about technology, development, marketing and much more, where I share my discoveries and topics I find particularly interesting."

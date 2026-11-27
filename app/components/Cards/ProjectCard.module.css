@@ -40,11 +40,11 @@
   transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
-.card:hover .iconImg {
+.clickable:hover .iconImg {
   transform: translateY(-3px) rotate(-4deg);
 }
 
-.card:hover .iconGlow {
+.clickable:hover .iconGlow {
   opacity: 0.9;
   transform: scale(1.5);
 }
@@ -107,10 +107,52 @@
   transition: transform var(--transition-fast);
 }
 
-.card:hover .open {
+.clickable:hover .open {
   color: var(--color-primary);
 }
 
-.card:hover .openIcon {
+.clickable:hover .openIcon {
   transform: translateX(5px);
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--foreground-muted);
+}
+
+.statusDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.live {
+  color: #4ade80;
+  border-color: rgba(74, 222, 128, 0.3);
+}
+
+.live .statusDot {
+  box-shadow: 0 0 8px currentColor;
+}
+
+.wip {
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.3);
 }

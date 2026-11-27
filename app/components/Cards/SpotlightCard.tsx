@@ -6,10 +6,12 @@ import styles from './SpotlightCard.module.css';
 type SpotlightCardProps = {
   children: ReactNode;
   className?: string;
+  /** Se `false` la card non si solleva al passaggio del mouse (per card non cliccabili). */
+  interactive?: boolean;
 };
 
 /** Card con alone luminoso che segue il cursore (bordo + riflesso interno). */
-export default function SpotlightCard({ children, className = '' }: SpotlightCardProps) {
+export default function SpotlightCard({ children, className = '', interactive = true }: SpotlightCardProps) {
   const handleMouseMove = (event: MouseEvent<HTMLDivElement>) => {
     const target = event.currentTarget;
     const rect = target.getBoundingClientRect();
@@ -18,7 +20,7 @@ export default function SpotlightCard({ children, className = '' }: SpotlightCar
   };
 
   return (
-    <div className={`${styles.spotlight} ${className}`} onMouseMove={handleMouseMove}>
+    <div className={`${styles.spotlight} ${interactive ? styles.interactive : ''} ${className}`} onMouseMove={handleMouseMove}>
       {children}
     </div>
   );

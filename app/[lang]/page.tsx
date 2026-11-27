@@ -160,8 +160,10 @@ export default async function HomePage({ params }: { params: LangParams }) {
               <Reveal key={p.slug} delay={i * 100}>
                 <ProjectCard
                   project={p}
+                  lang={lang}
                   description={dict.projects.items[p.slug as keyof typeof dict.projects.items].description}
                   openLabel={dict.open}
+                  statusLabels={dict.projects.status}
                 />
               </Reveal>
             ))}
